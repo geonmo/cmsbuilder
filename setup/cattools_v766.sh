@@ -11,7 +11,7 @@ git checkout -b prod v7-6-6
 
 cd $CMSSW_BASE/src
 scram setup lhapdf
-#scram b -j 4 
+scram b -j 20 
 cd $SRT_CMSSW_BASE_SCRAMRTDEL/src/CATTools/CatProducer/prod
 
 catGetDatasetInfo v7-6-6

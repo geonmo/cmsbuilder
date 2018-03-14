@@ -45,6 +45,6 @@ git checkout -b v8-0-6 v8-0-6
 git submodule init
 git submodule update
 cd ..
-
+scram b -j 20
 catGetDatasetInfo v8-0-6
 
