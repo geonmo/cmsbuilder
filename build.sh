@@ -7,7 +7,7 @@ source /cvmfs/cms.cern.ch/cmsset_default.sh
 for f in $(ls /home/cmsbuilder/cmsbuilder/setup/*.sh)
 do
   cd /home/cmsbuilder/cmsbuilder/build
-  name=$(basename /home/cmsbuilder/cmsbuilder/setup/*.sh .sh)
+  name=$(basename ${f} .sh)
   runname=$(readlink -f ${f})
   echo ${name}, ${f}
   ${runname} ${name}
